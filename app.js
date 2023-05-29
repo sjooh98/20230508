@@ -16,6 +16,10 @@ app.use(express.static(path.join(__dirname, 'docs')));
 app.use(express.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 app.post('/api/chat', async(req, res) => {
     const prompt = req.body.prompt;
     try {
@@ -28,7 +32,7 @@ app.post('/api/chat', async(req, res) => {
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Bearer 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' 
+                    'Authorization': 'Bearer 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' 
                 }
             }
         );
