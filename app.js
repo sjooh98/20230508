@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.sendFile('/docs/index.html');
 });
 
 app.post('/api/chat', async(req, res) => {
