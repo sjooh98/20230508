@@ -32,7 +32,7 @@ app.post('/api/chat', async (req, res) => { // post방식으로 https://localhos
       {
         headers: { // 요청 헤더를 정의 
           'Content-Type': 'application/json',
-          'Authorization': `Bearer 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` // 오픈에이아이 api키를 여기에 삽입. 
+          'Authorization': `Bearer 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` // 오픈에이아이 api키를 여기에 삽입. 
         }
       }
     );
