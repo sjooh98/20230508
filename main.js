@@ -8,7 +8,7 @@ window.onload = function () { // 자바스크립트로 접근할 수 있는 브�
     const prompt = document.getElementById('prompt').value; // document의 'prompt'아이디를 가진 html태그를 찾아서 그 값을 const prompt라는 변수에 저장한다.
     const responseElement = document.getElementById('response'); // document의 'response'아이디를 가진애를 찾아서 저장한다
 
-    axios.post('http://157.245.154.238:3000/api/chat', { prompt: prompt }) // axios의 post방식으로 https://localhost:3000/api/chat 목적지로 prompt라는 값에 미리 정의한 prompt를 넣어서 요청한다. 
+    axios.post('http://165.22.102.72:3000/api/chat', { prompt: prompt }) // axios의 post방식으로 https://localhost:3000/api/chat 목적지로 prompt라는 값에 미리 정의한 prompt를 넣어서 요청한다. 
       .then(function (response) { // 서버에서 값이 오면 
         console.log(response);
         responseElement.textContent = response.data.choices[0].message.content; // 출력한 태그인 p태그에 respose.data.choices[0].message.content의 텍스트 데이터를 넣어준다.  
